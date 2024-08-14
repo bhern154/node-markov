@@ -55,11 +55,19 @@ class MarkovMachine {
       // add the random word to the text
       if(currentWord){
         text = text + " " + currentWord
+        numWords = numWords - 1
+      }
+      // stop when numwords is reached
+      if (numWords == 0) {
+        break;
       }
     }
+    console.log(text)
     return text;
   }
 }
 
-let mm = new MarkovMachine("the cat in the hat");
-console.log(mm.makeText())
+// Export the MarkovMachine class
+module.exports = {
+  MarkovMachine,
+};

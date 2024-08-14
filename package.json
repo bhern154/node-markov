@@ -2,10 +2,14 @@
   "name": "node-markov",
   "version": "1.0.0",
   "description": "exersise using node and jest for testing",
+  "type": "module",
   "main": "makeText.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "jest"
   },
   "author": "Brian Hernandez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.3"
+  }
 }
