@@ -1,8 +1,8 @@
 /** Command-line tool to generate Markov text. */
-const fs = require("fs");
-const { MarkovMachine } = require('./markov.js');
-const axios = require("axios");
-const process = require("process");
+import fs from 'fs/promises';
+import axios from 'axios';
+import MarkovMachine from './markov.js';
+import process from 'process';
 
 // example
 // let mm = new MarkovMachine("the cat in the hat");

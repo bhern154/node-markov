@@ -68,6 +68,9 @@ class MarkovMachine {
 }
 
 // Export the MarkovMachine class
-module.exports = {
-  MarkovMachine,
-};
+export default MarkovMachine;
+
+// // Export the MarkovMachine class
+// module.exports = {
+//   MarkovMachine,
+// };
